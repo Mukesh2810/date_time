@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>        
+<title>Realtime Clock</title>
+
+<style>
+	#date{
+		font-size: 40px;
+	}
+    #clock{
+		font-size: 40px;
+	}
+	body{
+		background-color: #A9D8B8;
+	}
+</style>
+
+</head>
+    
+<body onload = "realtimeClock()">
+<h2>THE CURRENT DATE AND TIME IS :</h2><br>
+<div id = "date"></div>
+<div id = "clock"></div>
+<h3 style="font-size: 18pt">Enter Future Time :</h3><br>
+<div id = "input_time" style="width: 875px; ">
+<input type="number" id="hour" placeholder="enter hour" value = "" style="font-size: 18pt; height: 40px; width:280px;">
+<input type="number" id="minute" placeholder="enter minute" value = "" style="font-size: 18pt; height: 40px; width:280px; ">
+<input type="number" id="second" placeholder="enter second" value = "" style="font-size: 18pt; height: 40px; width:280px; ">
+</div><br>
+<h4 style="font-size: 15pt">Note : After giving input, move the the mouse pointer away from input box.</h4>
+<script src="TimeControl.js" async defer></script>
+</body>
+</html>
